@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="about.css">
+   
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div id="banner">
+        
+        <div class="banner-text">
+            <h1>About Us.</h1>
+            <p>A step towards making optimisation quick, convenient and accessible.</p>
+            <p>Tata Steel Limited is an Indian multinational steel-making company based in Jamshedpur, Jharkhand, and is headquartered in Mumbai, Maharashtra, India. It is a subsidiary of the Tata Group</p>
+            <br>
+            <p>A shop floor is the area of a factory, machine shop, etc. where people work on machines, or the space in a retail establishment where goods are sold to consumers. </p>
+            <br><br><br>
+            <p>Through This Project We aim at creating a optimisable conduit which segregates our data values based on their general structure through a set of input data values</p>
+        </div>
+    </div>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME.</a></li>
+                <li><a href="about.html">ABOUT US.</a></li>
+                <li><a href="">CONTACT US.</a>
+                </li>
+                <li><a href="#">OUR USERS.</a></li>
+                <li><a href="">LOGIN.</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="images/menu.png" alt="" id="menu">
+    </div>
+    
+    <footer>
+        <p>Copyright &copy;Tarini <script>document.write(new Date().getFullYear());</script></p>
+    </footer>
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+        var menu = document.getElementById("menu");
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0"
+                menu.src = "images/close.png";
+            }
+            else {
+                sidenav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+    </script>
+   <script>
+    setTimeout(function(){$('#preloader').hide();}, 2000); 
+      var preloader = document.getElementById("preloader");
+          function loader(){
+            preloader.style.display = 'none';
+          }
+    </script>
+</body>
+
+</html>
